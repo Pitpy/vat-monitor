@@ -1,0 +1,310 @@
+{
+  "vehicleIn": [
+      {
+          "vehicleId": "0101",
+          "vehicleType": "ລົດເກັງ",
+          "icon": "icon-passenger",
+          "vehicleCnt": 60,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0102",
+          "vehicleType": "ລົດຈິບ",
+          "icon": "icon-mini-van",
+          "vehicleCnt": 61,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0103",
+          "vehicleType": "ລົດກະບະ",
+          "icon": "icon-pickup",
+          "vehicleCnt": 44,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0104",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດນ້ອຍ 7 ບ່ອນນັ່ງລົງມາ",
+          "icon": "icon-van",
+          "vehicleCnt": 5,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0105",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດກາງ 8-25 ບ່ອນນັ່ງ",
+          "icon": "icon-mini-bus",
+          "vehicleCnt": 6,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0106",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດໃຫຍ່ ຫຼາຍກວ່າ 25 ບ່ອນນັ່ງ",
+          "icon": "icon-bus",
+          "vehicleCnt": 10,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0107",
+          "vehicleType": "ລົດບັນທຸກ 6 ລໍ້",
+          "icon": "icon-mini-truck",
+          "vehicleCnt": 56,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0108",
+          "vehicleType": "ລົດບັນທຸກ 10-12 ລໍ້",
+          "icon": "icon-mine-truck",
+          "vehicleCnt": 90,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0109",
+          "vehicleType": "ລົດບັນທຸກ 18 ລໍ້ ຫຼື ລົດລາກ",
+          "icon": "icon-container-truck",
+          "vehicleCnt": 59,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1101",
+          "vehicleType": "ລົດເກັງ",
+          "icon": "icon-passenger",
+          "vehicleCnt": 78,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1102",
+          "vehicleType": "ລົດຈິບ",
+          "icon": "icon-mini-van",
+          "vehicleCnt": 50,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1103",
+          "vehicleType": "ລົດກະບະ",
+          "icon": "icon-pickup",
+          "vehicleCnt": 46,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1104",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດນ້ອຍ 7 ບ່ອນນັ່ງລົງມາ",
+          "icon": "icon-van",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1105",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດກາງ 8-25 ບ່ອນນັ່ງ",
+          "icon": "icon-mini-bus",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1106",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດໃຫຍ່ ຫຼາຍກວ່າ 25 ບ່ອນນັ່ງ",
+          "icon": "icon-bus",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1107",
+          "vehicleType": "ລົດບັນທຸກ 6 ລໍ້",
+          "icon": "icon-mini-truck",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1108",
+          "vehicleType": "ລົດບັນທຸກ 10-12 ລໍ້",
+          "icon": "icon-mine-truck",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1109",
+          "vehicleType": "ລົດບັນທຸກ 18 ລໍ້ ຫຼື ລົດລາກ",
+          "icon": "icon-container-truck",
+          "vehicleCnt": 0,
+          "fees": 0
+      }
+  ],
+  "vehicleOut": [
+      {
+          "vehicleId": "0101",
+          "vehicleType": "ລົດເກັງ",
+          "icon": "icon-passenger",
+          "vehicleCnt": 88,
+          "fees": 2200000
+      },
+      {
+          "vehicleId": "0102",
+          "vehicleType": "ລົດຈິບ",
+          "icon": "icon-mini-van",
+          "vehicleCnt": 112,
+          "fees": 2800000
+      },
+      {
+          "vehicleId": "0103",
+          "vehicleType": "ລົດກະບະ",
+          "icon": "icon-pickup",
+          "vehicleCnt": 71,
+          "fees": 1775000
+      },
+      {
+          "vehicleId": "0104",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດນ້ອຍ 7 ບ່ອນນັ່ງລົງມາ",
+          "icon": "icon-van",
+          "vehicleCnt": 11,
+          "fees": 440000
+      },
+      {
+          "vehicleId": "0105",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດກາງ 8-25 ບ່ອນນັ່ງ",
+          "icon": "icon-mini-bus",
+          "vehicleCnt": 23,
+          "fees": 1150000
+      },
+      {
+          "vehicleId": "0106",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດໃຫຍ່ ຫຼາຍກວ່າ 25 ບ່ອນນັ່ງ",
+          "icon": "icon-bus",
+          "vehicleCnt": 59,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0107",
+          "vehicleType": "ລົດບັນທຸກ 6 ລໍ້",
+          "icon": "icon-mini-truck",
+          "vehicleCnt": 85,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0108",
+          "vehicleType": "ລົດບັນທຸກ 10-12 ລໍ້",
+          "icon": "icon-mine-truck",
+          "vehicleCnt": 95,
+          "fees": 0
+      },
+      {
+          "vehicleId": "0109",
+          "vehicleType": "ລົດບັນທຸກ 18 ລໍ້ ຫຼື ລົດລາກ",
+          "icon": "icon-container-truck",
+          "vehicleCnt": 23,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1101",
+          "vehicleType": "ລົດເກັງ",
+          "icon": "icon-passenger",
+          "vehicleCnt": 75,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1102",
+          "vehicleType": "ລົດຈິບ",
+          "icon": "icon-mini-van",
+          "vehicleCnt": 96,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1103",
+          "vehicleType": "ລົດກະບະ",
+          "icon": "icon-pickup",
+          "vehicleCnt": 12,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1104",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດນ້ອຍ 7 ບ່ອນນັ່ງລົງມາ",
+          "icon": "icon-van",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1105",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດກາງ 8-25 ບ່ອນນັ່ງ",
+          "icon": "icon-mini-bus",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1106",
+          "vehicleType": "ລົດໂດຍສານຂະໜາດໃຫຍ່ ຫຼາຍກວ່າ 25 ບ່ອນນັ່ງ",
+          "icon": "icon-bus",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1107",
+          "vehicleType": "ລົດບັນທຸກ 6 ລໍ້",
+          "icon": "icon-mini-truck",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1108",
+          "vehicleType": "ລົດບັນທຸກ 10-12 ລໍ້",
+          "icon": "icon-mine-truck",
+          "vehicleCnt": 0,
+          "fees": 0
+      },
+      {
+          "vehicleId": "1109",
+          "vehicleType": "ລົດບັນທຸກ 18 ລໍ້ ຫຼື ລົດລາກ",
+          "icon": "icon-container-truck",
+          "vehicleCnt": 0,
+          "fees": 0
+      }
+  ],
+  "inOut": {
+      "cntVehicleIn": 176,
+      "cntVehicleOut": 305,
+      "cntVehicle": 481,
+      "cntPersonIn": 567,
+      "cntPersonOut": 881,
+      "cntPerson": 1448
+  },
+  "passengerDoc": [
+      {
+          "bookType": "b",
+          "cntPerson": 815,
+          "fees": 5350000,
+          "otFees": 5348000
+      },
+      {
+          "bookType": "p",
+          "cntPerson": 633,
+          "fees": 0,
+          "otFees": 4726000
+      }
+  ],
+  "nationalIn": {
+      "dest": "i",
+      "cntPassport": 306,
+      "cntborderPass": 261,
+      "laoPassenger": 567,
+      "foreignerPassenger": 0,
+      "totalPassenger": 567
+  },
+  "nationalOut": {
+      "dest": "o",
+      "cntPassport": 327,
+      "cntborderPass": 554,
+      "laoPassenger": 880,
+      "foreignerPassenger": 1,
+      "totalPassenger": 881
+  },
+  "inOutSummary": {
+      "dailyVehicle": 481,
+      "dailyPerson": 1448,
+      "dailyFees": 13715000,
+      "dailyOtFees": 10074000,
+      "monthlyVehicle": 699,
+      "monthlyPerson": 2019,
+      "monthlyFees": 22270000,
+      "monthlyOtFees": 10512000,
+      "yearlyVehicle": 699,
+      "yearlyPerson": 2019,
+      "yearlyFees": 22270000,
+      "yearlyOtFees": 10512000
+  }
+}

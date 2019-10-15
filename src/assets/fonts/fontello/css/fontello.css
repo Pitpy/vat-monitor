@@ -1,0 +1,116 @@
+canvas[data-v-1ae87868] {
+    width: 369px
+}
+
+@font-face {
+    font-family: fontello;
+    src: url(../fonts/fontello.eot);
+    src: url(../fonts/fontello.eot#iefix) format("embedded-opentype"), url(../fonts/fontello.woff2) format("woff2"), url(../fonts/fontello.woff) format("woff"), url(../fonts/fontello.ttf) format("truetype"), url(../img/fontello.svg#fontello) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+[class*=" icon-"]:before,
+[class^=icon-]:before {
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: .45em;
+    font-size: 120%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-truck:before {
+    content: "\E800"
+}
+
+.icon-mini-van:before {
+    content: "\E801"
+}
+
+.icon-minibus-pickup:before {
+    content: "\E802"
+}
+
+.icon-passenger:before {
+    content: "\E803"
+}
+
+.icon-pickup:before {
+    content: "\E804"
+}
+
+.icon-container-truck:before {
+    content: "\E805"
+}
+
+.icon-van:before {
+    content: "\E806"
+}
+
+.icon-bus:before {
+    content: "\E807"
+}
+
+.icon-suv:before {
+    content: "\E808"
+}
+
+.icon-forklifts:before {
+    content: "\E809"
+}
+
+.icon-mine-truck:before {
+    content: "\E80A"
+}
+
+.icon-mini-bus:before {
+    content: "\E80D"
+}
+
+.icon-mid-truck:before {
+    content: "\E80F"
+}
+
+.icon-big-motorcycle:before {
+    content: "\E810"
+}
+
+.icon-mini-truck:before {
+    content: "\E811"
+}
+
+.icon-tuk-tuk:before {
+    content: "\E812"
+}
+
+.icon-motorcycle:before {
+    content: "\E813"
+}
+
+.icon-trailer:before {
+    content: "\E814"
+}
+
+.icon-jumbo:before {
+    content: "\E815"
+}
+
+.icon-cementl-truck:before {
+    content: "\E816"
+}
+
+.icon-petrol-truck:before {
+    content: "\E817"
+}
+
+.icon-trailer-truck:before {
+    content: "\E818"
+}
