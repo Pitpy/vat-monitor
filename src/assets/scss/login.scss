@@ -1,0 +1,180 @@
+#login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7fafc;
+}
+
+._container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: white;
+    transition: all .2s;
+
+    @media screen and (min-width: 760px) {
+        width: 650px;
+        height: 500px;
+        border-radius: .8rem;
+        box-shadow: 0 0.3rem 1rem -0.3rem rgba(26, 19, 76, 0.35);
+    }
+
+    .logo-box {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        transform: translate(0, 3rem);
+
+        @media screen and (min-width: 760px) {
+            height: 35%;
+            transform: translate(0, -5rem);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: all 1s;
+            filter: drop-shadow(0 0.3rem 0.2rem rgba(26, 19, 76, 0.35));
+        }
+    }
+
+    .control-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5rem;
+        padding: 0 1rem;
+        width: 100%;
+        height: 100%;
+        color: #1a134c;
+        box-sizing: border-box;
+
+        @media screen and (min-width: 760px) {
+            margin-top: 0;
+            justify-content: flex-end;
+            padding: 0 10rem 3.5rem;
+        }
+
+        .welcome {
+            position: relative;
+            bottom: 10%;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+
+            &.failed {
+                color: red;
+            }
+
+            @media screen and (min-width: 760px) {
+                bottom: 3rem;
+                width: 100%;
+                text-align: center;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .control {
+            position: relative;
+            border: solid .08rem #1a134c;
+            border-radius: .2rem;
+            padding: .3rem;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+
+            label {
+                position: absolute;
+                transform: translate(-.5rem, -2rem);
+            }
+
+            input {
+                border: none;
+                font-size: 1.2rem;
+                background: transparent;
+                outline: none;
+                width: 100%;
+                height: 100%;
+            }
+
+            .required {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                transform: translate(0, 2rem);
+                color: red;
+                font-size: .85rem;
+            }
+
+        }
+
+        .err {
+            border: solid .08rem red;
+        }
+
+        .button-box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .pp-btn {
+                width: 100%;
+                line-height: 100%;
+                padding: .8rem 2rem;
+                color: white;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                border: none;
+                outline: none;
+                border-radius: .3rem;
+                background-color: #1a134c;
+                box-shadow: 0 0.3rem 1rem -0.3rem rgba(26, 19, 76, 0.35);
+
+                &:active {
+                    background-color: #1a134cc7;
+                }
+
+                @media screen and (min-width: 760px) {
+                    width: auto;
+                    border-radius: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.cp-right {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    color: #acacac;
+}
+
+[role="button"] {
+    cursor: pointer;
+}

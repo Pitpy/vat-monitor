@@ -1,72 +1,21 @@
 <template>
   <div class="home">
-    <div class="spc"></div>
-    <div class="lut" v-if="screen">
-      <div class="lyt01" id="scroll1" ref="scroll_id1" v-if="show === true">
-        <v-in />
+    <transition leave-active-class="animated fadeOut">
+      <div class="loading" v-if="!this.$store.state.data">
+        <loading></loading>
       </div>
-      <div class="lyt02">
-        <div class="hsow">
-          <div class="malsd01">
-            <div class="oho">
-              <div class="slp">
-                <div class="xslw" v-if="display == true">
-                  <a-total />
-                </div>
-              </div>
-            </div>
-            <div class="ngs">
-              <passenger-doc />
-            </div>
+    </transition>
+    <Settings v-if="this.$store.state.popup"></Settings>
+    <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+      <div v-if="this.$store.state.data">
+        <header key="1">
+          <app-header></app-header>
+        </header>
+        <div class="spc" key="2"></div>
+        <div class="lut" key="3" v-if="screen">
+          <div class="lyt01" id="scroll1" ref="scroll_id1" v-if="show === true">
+            <v-in />
           </div>
-          <div class="malsd02">
-            <div class="woe">
-              <div class="pel">
-                <national-in-out />
-              </div>
-            </div>
-          </div>
-          <div class="malsd02">
-            <div class="woe">
-              <in-out-summary />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="lyt01" id="scroll2" ref="scroll_id2" v-if="show === true">
-        <o-in />
-      </div>
-      <div class="howp" v-if="show === false">
-        <div class="howl_" :style="{height: `${ioHeight}px`}">
-          <div class="lyt01" id="scroll1" ref="scroll_id1">
-            <v-in :iHeight="iHeight" />
-          </div>
-        </div>
-        <div class="howl_" :style="{height: `${ioHeight}px`}">
-          <div class="lyt01 spc_" id="scroll2" ref="scroll_id2">
-            <o-in :oHeight="oHeight" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="lut">
-      <swiper :options="swiperOption">
-        <div class="swiper-pagination" slot="pagination" :style="{marginBottom: '50px'}"></div>
-        <!-- slide 1 -->
-        <swiper-slide>
-          <div class="lyt02">
-            <div class="hsow">
-              <div class="malsd02">
-                <div class="woe">
-                  <in-out-summary />
-                </div>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-
-        <!-- slide 2 -->
-        <swiper-slide>
           <div class="lyt02">
             <div class="hsow">
               <div class="malsd01">
@@ -81,14 +30,6 @@
                   <passenger-doc />
                 </div>
               </div>
-            </div>
-          </div>
-        </swiper-slide>
-
-        <!-- slide 3 -->
-        <swiper-slide>
-          <div class="lyt02">
-            <div class="hsow">
               <div class="malsd02">
                 <div class="woe">
                   <div class="pel">
@@ -96,29 +37,101 @@
                   </div>
                 </div>
               </div>
+              <div class="malsd02">
+                <div class="woe">
+                  <in-out-summary />
+                </div>
+              </div>
             </div>
           </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="howp">
+          <div class="lyt01" id="scroll2" ref="scroll_id2" v-if="show === true">
+            <o-in />
+          </div>
+          <div class="howp" v-if="show === false">
             <div class="howl_" :style="{height: `${ioHeight}px`}">
               <div class="lyt01" id="scroll1" ref="scroll_id1">
                 <v-in :iHeight="iHeight" />
               </div>
             </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="howp">
             <div class="howl_" :style="{height: `${ioHeight}px`}">
               <div class="lyt01 spc_" id="scroll2" ref="scroll_id2">
                 <o-in :oHeight="oHeight" />
               </div>
             </div>
           </div>
-        </swiper-slide>
-      </swiper>
-    </div>
+        </div>
+        <div class="lut">
+          <swiper :options="swiperOption">
+            <div class="swiper-pagination" slot="pagination" :style="{marginBottom: '50px'}"></div>
+            <!-- slide 1 -->
+            <swiper-slide>
+              <div class="lyt02">
+                <div class="hsow">
+                  <div class="malsd02">
+                    <div class="woe">
+                      <in-out-summary />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <!-- slide 2 -->
+            <swiper-slide>
+              <div class="lyt02">
+                <div class="hsow">
+                  <div class="malsd01">
+                    <div class="oho">
+                      <div class="slp">
+                        <div class="xslw" v-if="display == true">
+                          <a-total />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ngs">
+                      <passenger-doc />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <!-- slide 3 -->
+            <swiper-slide>
+              <div class="lyt02">
+                <div class="hsow">
+                  <div class="malsd02">
+                    <div class="woe">
+                      <div class="pel">
+                        <national-in-out />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="howp">
+                <div class="howl_" :style="{height: `${ioHeight}px`}">
+                  <div class="lyt01" id="scroll1" ref="scroll_id1">
+                    <v-in :iHeight="iHeight" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="howp">
+                <div class="howl_" :style="{height: `${ioHeight}px`}">
+                  <div class="lyt01 spc_" id="scroll2" ref="scroll_id2">
+                    <o-in :oHeight="oHeight" />
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -130,6 +143,10 @@ import PassengerDoc from "@/components/PassengerDoc.vue";
 import NationalInOut from "@/components/NationalInOut.vue";
 import InOutSummary from "@/components/inOutSummary/index.vue";
 import ATotal from "@/components/Atotal.vue";
+import Settings from "@/components/Settings.vue";
+
+const Loading = () => import("@/components/Loading.vue");
+import AppHeader from "@/views/header/index.vue";
 
 import jdata from "@/views/data.json";
 import japi from "../api.demo.json";
@@ -138,6 +155,7 @@ import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
   components: {
     // AppHeader,
+    Settings,
     ATotal,
     VIn,
     OIn,
@@ -145,7 +163,9 @@ export default {
     NationalInOut,
     InOutSummary,
     swiper,
-    swiperSlide
+    swiperSlide,
+    AppHeader,
+    Loading
   },
   data() {
     return {
@@ -168,7 +188,7 @@ export default {
   mounted() {
     setInterval(() => {
       this.getAPI();
-    }, 2000);
+    }, 3000);
     window.addEventListener("resize", () => {
       if (window.innerWidth < 900) {
         this.show = false;
@@ -193,6 +213,9 @@ export default {
     setTimeout(() => {
       this.display = true;
     }, 500);
+    window.addEventListener("beforeunload", () => {
+      if (localStorage.getItem("logRemember") === "false") localStorage.clear();
+    });
   },
   methods: {
     async getAPI() {

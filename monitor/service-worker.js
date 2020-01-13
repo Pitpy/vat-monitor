@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/monitor/precache-manifest.97d72f96f93df4dd682efe01decff21b.js"
+  "/monitor/precache-manifest.760b2bf1457760861a710075a3924b66.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "smart-vat-monitor"});

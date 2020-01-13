@@ -1,44 +1,15 @@
 <template>
   <div id="app">
-    <transition name="bounce">
-      <div class="loading" v-if="!this.$store.state.data">
-        <loading></loading>
-      </div>
-    </transition>
-    <header>
-      <app-header></app-header>
-    </header>
     <router-view></router-view>
   </div>
 </template>
-
-<script>
-const Loading = () => import("@/components/Loading.vue");
-import AppHeader from "@/views/header/index.vue";
-export default {
-  components: {
-    AppHeader,
-    Loading
-  },
-  data() {
-    return {
-      loadPage: true
-    };
-  },
-  mounted() {
-    setTimeout(() => {
-      this.loadPage = false;
-    }, 2000);
-  }
-};
-</script>
 
 <style lang="scss">
 body {
   font-family: "Segoe UI";
   margin: 0;
   overflow: scroll;
-  background: #0e0d0d;
+  background: #f7fafc;
   @media screen and (min-width: 800px) {
     overflow: hidden;
   }

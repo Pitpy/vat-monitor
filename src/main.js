@@ -7,6 +7,9 @@ import VueAxios from 'vue-axios'
 import './registerServiceWorker'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import 'animate.css/animate.min.css'
+import Vuelidate from 'vuelidate'
+Vue.use(Vuelidate)
 
 Vue.use(VueAwesomeSwiper)
 

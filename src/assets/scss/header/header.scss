@@ -155,3 +155,14 @@
 .hms ._spt ._jsdf .dropdown:hover .dropdown-content {
     display: block
 }
+
+.logout {
+    margin-left: .5rem;
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+
+    &:active {
+        color: #ad1818;
+    }
+}
